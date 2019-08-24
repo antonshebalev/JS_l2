@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Hello!
+    </h1>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius esse dolorem, cumque libero suscipit, aperiam laborum iusto explicabo illum laudantium, recusandae et dicta? Cumque explicabo facere maxime quas dolore totam.</span>
+    </p>
+</body>
+
+</html>
+<script>
+    //1. 
+    //   ++а - выполняет сложение до дейтсвия,
+    //   a++ - выполняет после действия сложение.
+
+    //2.
+    //   x = 5
+
+    //3 пункт урока 2.
+    var a = 4;
+    var b = 3;
+    if (a > 0 && b > 0) {
+        console.log("3." + (a - b));
+    } else
+    if (a < 0 && b < 0) {
+        console.log("3." + (a * b));
+    } else
+    if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+        console.log("3." + (a + b));
+    }
+
+    //4 
+    function getRandomInRange(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var a = getRandomInRange(0, 15);
+    switch (a) {
+        case 0: // 
+            alert(a);
+            break;
+        case 1: // if (a === 0)
+            alert(a);
+            break;
+        case 2: // if (a === 0)
+            alert(a);
+            break;
+        case 3: // if (a === 0)
+            alert(a);
+            break;
+        case 4: // if (a === 0)
+            alert(a);
+            break;
+        case 5: // if (a === 0)
+            alert(a);
+            break;
+        case 6: // if (a === 0)
+            alert(a);
+            break;
+        case 7: // if (a === 0)
+            alert(a);
+            break;
+        case 8: // if (a === 0)
+            alert(a);
+            break;
+        case 9: // if (a === 0)
+            alert(a);
+            break;
+        case 10: // if (a === 0)
+            alert(a);
+            break;
+        case 11: // if (a === 0)
+            alert(a);
+            break;
+        case 12: // if (a === 0)
+            alert(a);
+            break;
+        case 13: // if (a === 0)
+            alert(a);
+            break;
+        case 14: // if (a === 0)
+            alert(a);
+            break;
+
+
+        default: //15
+            alert(a);
+            break;
+    }
+
+    //5
+    function minus(a, b) {
+        return a - b;
+    }
+
+    function plus(a, b) {
+        return a + b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function divide(a, b) {
+        return a / b;
+    }
+    var a = 100;
+    var b = 10;
+    console.log("5. minus " + a + "-" + b + "=" + minus(a, b));
+    console.log("5. plus " + a + "+" + b + "=" + plus(a, b));
+    console.log("5. multiply " + a + "*" + b + "=" + multiply(a, b));
+    console.log("5. divide " + a + "/" + b + "=" + divide(a, b));
+
+    //6
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case 'minus' || '-':
+                return minus(arg1, arg2);
+                break;
+            case 'plus' || '+':
+                return plus(arg1, arg2);
+                break;
+            case 'multiply' || '*':
+                return multiply(arg1, arg2);
+                break;
+            case 'divide' || '/':
+                return divide(arg1, arg2);
+                break;
+            default:
+                return 10;
+                break;
+        }
+
+    }
+    console.log("6. mathOperation minus " + a + "-" + b + "=" + mathOperation(a, b, "minus"));
+    console.log("6. mathOperation plus " + a + "+" + b + "=" + mathOperation(a, b, "plus"));
+    console.log("6. mathOperation multiply " + a + "*" + b + "=" + mathOperation(a, b, "multiply"));
+    console.log("6. mathOperation divide " + a + "/" + b + "=" + mathOperation(a, b, "divide"));
+
+    //7
+
+    //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Null
+    //null имеет одно единственное значение
+    //0 имеет значения 0 или false
+
+    //8
+
+    function power(val, pow) {
+        if (pow == 1) {
+            return val;
+        } else {
+            return val * power(val, --pow)
+        }
+    }
+
+    console.log("8. 2 в степени 4 = " + power(2, 4));
+
+</script>
