@@ -1,2 +1,2 @@
-# JS_l2
-learn 2
+# JSlearn2
+Урок 2. Основные операторы JavaScript
